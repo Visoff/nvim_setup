@@ -1,23 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
-
-# Note: PS1 and umask are already set in /etc/profile. You should not
-# need this unless you want different defaults for root.
-# PS1='${debian_chroot:+($debian_chroot)}\h:\w\$ '
-# umask 022
-
-# You may uncomment the following lines if you want `ls' to be colorized:
-# export LS_OPTIONS='--color=auto'
-# eval "$(dircolors)"
-# alias ls='ls $LS_OPTIONS'
-# alias ll='ls $LS_OPTIONS -l'
-# alias l='ls $LS_OPTIONS -lA'
-#
-# Some more alias to avoid making mistakes:
-# alias rm='rm -i'
-# alias cp='cp -i'
-
-source ble.sh/out/ble.sh
-
 function mkcd {
   if [ ! -n "$1" ]; then
     echo "Enter a directory name"
@@ -28,22 +8,11 @@ function mkcd {
   fi
 }
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
-
-# deno
-export DENO_INSTALL="/root/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
-
-
 alias ..="cd ../"
 alias nv="nvim"
 alias nvd="nvim ."
 
 alias cdh="cd ~"
-
 
 FMT_BOLD="\e[1m"
 FMT_RESET="\e[0m"
