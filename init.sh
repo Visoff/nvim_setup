@@ -3,6 +3,7 @@
 echo "Kalinin Ilya's linux setup"
 
 echo "Installing nvim(not ready)" 
+bash ./nvim_install.sh
 
 echo "Copying .cofig/nvim"
 mkdir -p ~/.config/nvim && cp -r nvim ~/.config/nvim
