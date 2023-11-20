@@ -13,4 +13,4 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim \
     ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 
 echo "Copying new bahsrc"
-cp .bashrc ~/.bashrc
+bash bashrc_setup.sh
